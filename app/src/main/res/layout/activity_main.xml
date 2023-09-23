@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="-42dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#F9FAFA"
+            android:clickable="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:context=".MainActivity">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="329dp"
+                android:layout_height="62dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="83dp"
+                    android:layout_height="64dp"
+                    android:layout_weight="1"
+                    android:background="@color/black"
+                    android:onClick="sum"
+                    android:text="+"
+                    android:textColor="#FBF9F9"
+                    android:textColorHighlight="#4CAF50"
+                    android:textColorHint="@color/white" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="83dp"
+                    android:layout_height="64dp"
+                    android:background="@color/black"
+                    android:onClick="multiply"
+                    android:text="*"
+                    android:textColor="#FBF9F9"
+                    android:textColorHint="@color/white" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="83dp"
+                    android:layout_height="64dp"
+                    android:background="@color/black"
+                    android:onClick="divide"
+                    android:text="/"
+                    android:textColor="#FBF9F9"
+                    android:textColorHint="@color/white" />
+
+                <Button
+                    android:id="@+id/buttonx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="64dp"
+                    android:background="@color/black"
+                    android:onClick="deduct"
+                    android:text="-"
+                    android:textColor="#FBF9F9"
+                    android:textColorHint="@color/white" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/number2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter number"
+                android:inputType="number|textPersonName"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.3" />
+
+            <EditText
+                android:id="@+id/number1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Enter number"
+                android:inputType="number"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.16" />
+
+            <TextView
+                android:id="@+id/resultText"
+                android:layout_width="123dp"
+                android:layout_height="99dp"
+                android:background="#2196F3"
+                android:gravity="center"
+                android:text="Result:"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.757" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
